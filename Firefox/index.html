@@ -592,7 +592,23 @@ document.addEventListener( 'wpcf7mailsent', function ( event ) {
       }, false );
     </script>
     <!-- End Meta Pixel Event Code -->
-    <div id='fb-pxl-ajax-code'></div><script defer src="https://connect.podium.com/widget.js#ORG_TOKEN=8202edba-14fa-449a-a295-512ffcaaff0a" id="podium-widget" data-organization-api-token="8202edba-14fa-449a-a295-512ffcaaff0a"></script> <link rel='stylesheet' id='rs-plugin-settings-css' href='https://4seasonsvictoria.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.20' type='text/css' media='all' />
+	
+   <script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'fMQJv1oJbbS2GnN1szBk7Pvq',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+
 <style id='rs-plugin-settings-inline-css' type='text/css'>
 #rs-demo-id {}
 </style>
